@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 3 - Winter 2022</title>
+    <!--
+    <style>
+        div{
+            color: green;
+        }
+    </style>
+     -->
+</head>
+<body>
+   <header class="header">
+       <h1 id="general">CSS Selectors</h1>
+       <p>A CSS selector select the HTML element(s) you want to style.</p>
+        <h2 style="color: red;"><a href="https://www.w3schools.com/css/css_selectors.asp">CSS Selectors</a></h2>
+        <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+        <p>We can divide CSS selectors into five categories:</p>
+        <ul>
+            <li>Simple selectors (select elements based on name, id, class)</li>
+            <li>Combinator selectors (select elements based on a specific relationship between them)
+                <ul class="combinator">
+                    <li class="combinator-first-item">Descendant Selector</li>
+                    <li>Child Selector (>)</li>
+                    <li>Adjacent Sibling Selector (+)</li>
+                    <li>General Sibling Selector (~)</li>
+                </ul>
+            </li>
+            <li>Pseudo-class selectors (select elements based on a certain state)</li>
+            <li>Pseudo-elements selectors (select and style a part of an element)</li>
+            <li>Attribute selectors (select elements based on an attribute or attribute value)
+                <ol>
+                    <li>CSS [attribute] Selector</li>
+                    <li>CSS [attribute="value"] Selector</li>
+                    <li>CSS [attribute~="value"] Selector</li>
+                    <li>CSS [attribute|="value"] Selector</li>
+                    <li>CSS [attribute^="value"] Selector</li>
+                    <li>CSS [attribute$="value"] Selector</li>
+                    <li>CSS [attribute*="value"] Selector</li>
+                </ol>
+            </li>
+        </ul>
+        <p>This page will explain the most basic CSS selectors.</p>
+    </header>   
+    <main class="main">
+        <div id="element" class="text">
+            <h2>The CSS element Selector</h2>
+            <p>The element selector selects HTML based on the element name.</p>
+            <h3>Example</h3>
+            <p>Here, all &lt;p&gt; elements on the page will be with a red text color:</p>
+            <p>In this example all HTML elements with class="center" will be red:</p>
+            <p>p {<br>
+                 <span>color:</span> <span class="value">red;</span><br>
+               }</p>
+        </div>
+        <div class="id-selector text">
+            <h2>The CSS id Selector</h2>
+            <p class="text">The id selector uses the id attribute of an HTML element to select a specific element.</p>
+            <p>The id of an element is unique within a page, so the id selector is used to select one unique element!</p>
+            <p>To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+            <h3>Example</h3>
+            <p>The CSS rule below will be appllied to the HTML element with id="para1":</p>
+            <p>#para1 {<br>
+                <span>color:</span> <span class="value">red;</span><br>
+               }<br>
+            </p>
+            <p><mark>Note: A class name cannot start with a number!</mark></p>
+        </div>
+        <div class="class">
+            <h2>The CSS class Selector</h2>
+            <p>The class selector selects HTML elements with a specific class attribute.</p>
+            <p>To select elements with a specific class, write a period (.) character, followed by the class name</p>
+            <h3>Example</h3>
+            <p class="third-sentence">In this example all HTML elements with class="center" will be red:</p>
+            <p>.center {<br>
+                <span>color:</span> <span class="value">red;</span><br>
+               }</p>
+            <p>You can also specify that only specific HTML elements should be affected by a class.</p>
+            <p>p.center {<br>
+                <span>color:</span> <span class="value">red;</span><br>
+               }</p>
+            <p>HTML elements can also refer to more than one class.</p>
+            <h3>Example</h3>
+            <p>In this example the <p> element will be styled according to class="center" and to class="large": </p>
+            <p>p class="center large">This paragraph refers to two classes.</p>
+        </div>
+        <div class="universal">
+            <h2>The CSS Universal Selector</h2>
+            <p>The universal selector (*) selects all HTML elements on the page.</p>
+            <h3>Example</h3>
+            <p>The CSS rule below will affect every HTML element on the page:</p>
+            <p>* {<br>
+                <span>color:</span> <span class="value">red;</span><br>
+               }</p>
+        </div>
+        <div class="grouping">
+            <h2>The CSS Grouping Selector</h2>
+            <p>The grouping selector selects all the HTML elements with the same style definitions.</p>
+            <p>It will be better to group the selectors, to minimize the code.</p>
+            <p>To group selectors, separate each selector with a comma.</p>
+            <h3>Example</h3>
+            <p>In this example we have groped the selectors.</p>
+            <p>h1, h2, p {<br>
+                <span>color:</span> <span class="value">red;</span><br>
+               }</p>
+        </div>
+    </main> 
+   <footer class="footer"></footer>
+</body>
+</html>

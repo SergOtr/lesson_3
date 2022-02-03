@@ -1,0 +1,45 @@
+@import "null.css";
+
+li {
+	color: rgb(93, 139, 22);
+}
+span {
+	color: blue;
+}
+span.value {
+	color: rgb(158, 21, 101);
+}
+.header {
+	color: green;
+}
+h1,
+h2 {
+	color: red;
+}
+h3 {
+	color: rgb(173, 8, 8);
+}
+#general {
+	color: rgb(243, 74, 7);
+}
+div.text {
+	color: gray;
+}
+.id-selector.text {
+	color: rgb(150, 150, 14);
+}
+.class .third-sentence {
+	color: rgb(212, 65, 225);
+}
+li li {
+	color: rgb(77, 155, 129);
+}
+[class*="ping"] {
+	color: rgb(107, 35, 35);
+}
+.combinator > li {
+	color: rgb(158, 21, 101);
+}
+.combinator-first-item + li {
+	color: rgb(243, 24, 177);
+}
